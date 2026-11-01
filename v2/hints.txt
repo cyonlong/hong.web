@@ -1,0 +1,477 @@
+hong-envelope-v2
+eyJrZXlJRCI6InByaW1hcnkiLCJraW5kIjoiaGludHMiLCJtaW5BcHBWZXJzaW9uIjoiMC4yLjAiLCJub3RBZnRlciI6IjIwMjctMDEtMzBUMDY6MzU6MzRaIiwic291cmNlSUQiOiJob25nIiwidmVyc2lvbiI6MTc5MzUxNDkzNH0=
+QUBYQhoVS5du9jSt0yetdFgc53l9D3r35aBd5m/HDuQCjZn4aqBzqAHCM/SYbfDVH3GS/uIfUhJtlMQKp6wCAg==
+{
+  "hints" : {
+    "24h.com.vn" : {
+      "body" : "//article[contains(concat(' ',normalize-space(@class),' '),' cate-24h-foot-arti-deta-info ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' cate-24h-foot-arti-deta-sum ')]",
+      "list" : {
+        "imageAttr" : [
+          "data-original",
+          "data-src",
+          "src"
+        ],
+        "item" : "//article[.//h3//a[@href] or .//h2//a[@href]]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/bong-da-ngoai-hang-anh-c149.html"
+        ]
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' bv-lq ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box_tin_lien_quan_duoi_noi_dung_bai_pc ')]"
+      ]
+    },
+    "baochinhphu.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' detail-sapo ')]",
+      "list" : {
+        "item" : "//div[contains(concat(' ',normalize-space(@class),' '),' box-stream-item ')] | //div[contains(concat(' ',normalize-space(@class),' '),' box-focus-item ')] | //div[contains(concat(' ',normalize-space(@class),' '),' box-item ')]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href] | .//a[@title][@href])[1]",
+        "sections" : [
+          "/xa-hoi.htm"
+        ],
+        "time" : ".//*[contains(concat(' ',normalize-space(@class),' '),' box-stream-time ')][@title] | .//*[@data-time]"
+      },
+      "removed" : [
+        ".//*[@type='RelatedOneNews']",
+        ".//*[@type='RelatedNewsBox']",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' kbwscwlr-list ')]"
+      ]
+    },
+    "baomoi.com" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' content-body ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' bm-card-image ')]//img",
+        "imageAttr" : [
+          "data-src",
+          "srcset",
+          "src"
+        ],
+        "item" : "//div[contains(concat(' ',normalize-space(@class),' '),' bm-card ')]",
+        "link" : "(.//h3//a[@href])[1]",
+        "sections" : [
+          "/tin-moi.epi"
+        ],
+        "time" : ".//time[@datetime]",
+        "title" : ".//h3"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' bm-card ')]"
+      ]
+    },
+    "bongdaplus.vn" : {
+      "body" : "//div[@id='postContent']",
+      "lead" : "//div[contains(concat(' ',normalize-space(@class),' '),' summary ')]",
+      "list" : {
+        "item" : "//li[contains(concat(' ',normalize-space(@class),' '),' news ')] | //div[contains(concat(' ',normalize-space(@class),' '),' news ')]",
+        "link" : "(.//a[contains(concat(' ',normalize-space(@class),' '),' title ')][@href] | .//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+
+        ]
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' news-related ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' copyr ')]"
+      ]
+    },
+    "cafef.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' sapo ')]",
+      "list" : {
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' tlitem ')] | //*[contains(concat(' ',normalize-space(@class),' '),' box-category-item ')] | //*[contains(concat(' ',normalize-space(@class),' '),' fchoice-news-item ')] | //*[contains(concat(' ',normalize-space(@class),' '),' big ')][.//h2]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/xa-hoi.chn"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' sapo ')]",
+        "time" : ".//*[contains(concat(' ',normalize-space(@class),' '),' time ')][@title]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' title_box ')]",
+        ".//*[@type='RelatedOneNews']",
+        ".//*[@type='RelatedNewsBox']"
+      ]
+    },
+    "cand.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' article__body ')]",
+      "caption" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]/figcaption",
+      "date" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__meta ')]//time",
+      "image" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]//img",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__sapo ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__thumb ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' story ')]",
+        "link" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__heading ')]//a[@href]",
+        "sections" : [
+          "/thoi-su/"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__summary ')]",
+        "time" : ".//time[@datetime]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-heading ')]/..",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' social-share ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article__social ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-relate ')]",
+        ".//a[contains(concat(' ',normalize-space(@class),' '),' logo ')]/.."
+      ]
+    },
+    "dantri.com.vn" : {
+      "body" : "//div[@id='desktop-in-article']",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' singular-sapo ')] | //h2[contains(concat(' ',normalize-space(@class),' '),' dt-text-black ')][1]",
+      "list" : {
+        "image" : ".//img",
+        "item" : "//article[.//h3//a[@href]]",
+        "link" : "(.//h3//a[@href])[1]",
+        "sections" : [
+          "/thoi-su.htm"
+        ]
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-related ')]"
+      ]
+    },
+    "danviet.vn" : {
+      "body" : "//div[@id='explus-editor']",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' box-dvdesc ')]",
+      "list" : {
+        "item" : "//div[contains(concat(' ',normalize-space(@class),' '),' home-article ')] | //div[contains(concat(' ',normalize-space(@class),' '),' article-content ')][not(ancestor::div[contains(concat(' ',normalize-space(@class),' '),' home-article ')])]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/kinh-te/"
+        ]
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' news-related ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-related ')]"
+      ]
+    },
+    "kenh14.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' knc-sapo ')]",
+      "list" : {
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' knswli ')] | //li[contains(concat(' ',normalize-space(@class),' '),' klwfnswn ')] | //li[contains(concat(' ',normalize-space(@class),' '),' ksclirn ')] | //article[contains(concat(' ',normalize-space(@class),' '),' tammi-box__article ')]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href] | .//h4//a[@href])[1]",
+        "sections" : [
+          "/xa-hoi.chn"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' knswli-sapo ')]",
+        "time" : ".//*[contains(concat(' ',normalize-space(@class),' '),' knswli-time ')][@title]"
+      },
+      "removed" : [
+        ".//*[@type='RelatedOneNews']",
+        ".//*[@type='RelatedNewsBox']"
+      ]
+    },
+    "nhandan.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' article__body ')]",
+      "caption" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]/figcaption",
+      "date" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__meta ')]//time",
+      "image" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]//img",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__sapo ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__thumb ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' story ')]",
+        "link" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__heading ')]//a[@href]",
+        "sections" : [
+          "/chinhtri/"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__summary ')]",
+        "time" : ".//time[@datetime]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-heading ')]/..",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' social-share ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article__social ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-relate ')]",
+        ".//a[contains(concat(' ',normalize-space(@class),' '),' logo ')]/.."
+      ]
+    },
+    "sggp.org.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' article__body ')]",
+      "caption" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]/figcaption",
+      "date" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__meta ')]//time",
+      "image" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]//img",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__sapo ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__thumb ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' story ')]",
+        "link" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__heading ')]//a[@href]",
+        "sections" : [
+          "/xa-hoi/"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__summary ')]",
+        "time" : ".//time[@datetime]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-heading ')]/..",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' social-share ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article__social ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-relate ')]",
+        ".//a[contains(concat(' ',normalize-space(@class),' '),' logo ')]/.."
+      ]
+    },
+    "soha.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' news-sapo ')]",
+      "list" : {
+        "image" : ".//img[contains(concat(' ',normalize-space(@class),' '),' box-category-avatar ')]",
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' box-category-item ')]",
+        "link" : "(.//a[contains(concat(' ',normalize-space(@class),' '),' box-category-link-title ')][@href] | .//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/thoi-su-xa-hoi.htm"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' box-category-sapo ')]",
+        "time" : ".//*[contains(concat(' ',normalize-space(@class),' '),' time-ago ')][@title]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' adm-rightsection ')]",
+        ".//*[@type='RelatedOneNews']",
+        ".//*[@type='RelatedNewsBox']"
+      ]
+    },
+    "thanhnien.vn" : {
+      "author" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-author ')]//a[1]",
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' detail-sapo ')]",
+      "list" : {
+        "image" : ".//img[contains(concat(' ',normalize-space(@class),' '),' box-category-avatar ')]",
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' box-category-item ')] | //*[contains(concat(' ',normalize-space(@class),' '),' item-first ')]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href] | .//a[contains(concat(' ',normalize-space(@class),' '),' box-category-link-title ')])[1]",
+        "sections" : [
+          "/thoi-su.htm"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' box-category-sapo ')]"
+      },
+      "removed" : [
+        ".//*[@type='RelatedOneNews']",
+        ".//*[@type='RelatedNewsBox']"
+      ]
+    },
+    "thethao247.vn" : {
+      "body" : "//div[@id='content_detail']",
+      "lead" : "//p[contains(concat(' ',normalize-space(@class),' '),' sapo_detail ')]",
+      "list" : {
+        "item" : "//li[.//div[contains(concat(' ',normalize-space(@class),' '),' text ')]] | //div[contains(concat(' ',normalize-space(@class),' '),' top-pick ')] | //div[contains(concat(' ',normalize-space(@class),' '),' v2-cover ')]",
+        "link" : "(.//a[contains(concat(' ',normalize-space(@class),' '),' title ')][@href] | .//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+
+        ]
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' news_related ')]"
+      ]
+    },
+    "tienphong.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' article__body ')]",
+      "caption" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]/figcaption",
+      "date" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__meta ')]//time",
+      "image" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]//img",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__sapo ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__thumb ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' story ')]",
+        "link" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__heading ')]//a[@href]",
+        "sections" : [
+          "/xa-hoi/"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__summary ')]",
+        "time" : ".//time[@datetime]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-heading ')]/..",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' social-share ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article__social ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-relate ')]",
+        ".//a[contains(concat(' ',normalize-space(@class),' '),' logo ')]/.."
+      ]
+    },
+    "tinhte.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' xfBodyContainer ')]",
+      "list" : {
+        "image" : ".//div[contains(concat(' ',normalize-space(@class),' '),' thumb ')]",
+        "imageAttr" : [
+          "style"
+        ],
+        "item" : "//li[.//*[contains(concat(' ',normalize-space(@class),' '),' thread-title ')]][.//a[contains(@href,'/thread/')]] | //div[contains(concat(' ',normalize-space(@class),' '),' thread ')][.//a[contains(@href,'/thread/')]] | //div[contains(concat(' ',normalize-space(@class),' '),' item ')][.//a[contains(@href,'/thread/')]] | //article[.//a[contains(@href,'/thread/')]][.//*[contains(concat(' ',normalize-space(@class),' '),' thread-title ')]]",
+        "link" : "(.//a[contains(@href,'/thread/')])[1]",
+        "sections" : [
+          "/chuyen-trang-xem-nhanh/"
+        ],
+        "title" : "(.//*[contains(concat(' ',normalize-space(@class),' '),' thread-title ')])[1]"
+      }
+    },
+    "tuoitre.vn" : {
+      "author" : "//div[contains(concat(' ',normalize-space(@class),' '),' author-item-name ')]",
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' detail-sapo ')]",
+      "list" : {
+        "image" : ".//img[contains(concat(' ',normalize-space(@class),' '),' box-category-avatar ')]",
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' box-category-item ')]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/tin-moi-nhat.htm",
+          "/tto-plo.htm",
+          "/tto-nld.htm"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' box-category-sapo ')]",
+        "time" : ".//span[contains(concat(' ',normalize-space(@class),' '),' time-ago-last-news ')]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' kbwscwl-relatedbox ')]",
+        ".//*[@type='RelatedOneNews']",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' readmore-body-box ')]",
+        ".//*[@type='RelatedNewsBox']"
+      ]
+    },
+    "vietnamnet.vn" : {
+      "author" : "//*[contains(concat(' ',normalize-space(@class),' '),' newFeature__author-info ')]//a[1]",
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' maincontent ')]",
+      "date" : "//*[contains(concat(' ',normalize-space(@class),' '),' bread-crumb-detail__time ')]",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' content-detail-sapo ')]",
+      "list" : {
+        "imageAttr" : [
+          "data-srcset",
+          "srcset",
+          "data-src",
+          "src"
+        ],
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' horizontalPost ')] | //*[contains(concat(' ',normalize-space(@class),' '),' verticalPost ')] | //*[contains(concat(' ',normalize-space(@class),' '),' version-news ')]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/thoi-su"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' horizontalPost__main-desc ')] | .//*[contains(concat(' ',normalize-space(@class),' '),' verticalPost__main-desc ')]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' ck-cms-insert-news ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' insert-wiki-content ')]"
+      ]
+    },
+    "vietnamplus.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' article__body ')]",
+      "caption" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]/figcaption",
+      "date" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__meta ')]//time",
+      "image" : "//figure[contains(concat(' ',normalize-space(@class),' '),' article__avatar ')]//img",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' article__sapo ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__thumb ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' story ')]",
+        "link" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__heading ')]//a[@href]",
+        "sections" : [
+          "/chinhtri/"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' story__summary ')]",
+        "time" : ".//time[@datetime]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-heading ')]/..",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' social-share ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article__social ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-relate ')]",
+        ".//a[contains(concat(' ',normalize-space(@class),' '),' logo ')]/.."
+      ]
+    },
+    "vneconomy.vn" : {
+      "body" : "//main[@id='article-editor']",
+      "lead" : "//*[contains(concat(' ',normalize-space(@class),' '),' article-content__lead ')]",
+      "list" : {
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' new-item_vertical ')] | //article[contains(concat(' ',normalize-space(@class),' '),' new-item_horizontal ')]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/kinh-te-so.htm"
+        ],
+        "summary" : ".//p[contains(concat(' ',normalize-space(@class),' '),' text-description ')]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-related ')]"
+      ]
+    },
+    "vnexpress.net" : {
+      "author" : "//article[contains(concat(' ',normalize-space(@class),' '),' fck_detail ')]/p[@style='text-align:right;'][last()]",
+      "body" : "//article[contains(concat(' ',normalize-space(@class),' '),' fck_detail ')]",
+      "lead" : "//p[contains(concat(' ',normalize-space(@class),' '),' description ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' thumb-art ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' item-news ')]",
+        "link" : ".//h3[contains(concat(' ',normalize-space(@class),' '),' title-news ')]/a",
+        "sections" : [
+          "/tin-tuc-24h"
+        ],
+        "summary" : ".//p[contains(concat(' ',normalize-space(@class),' '),' description ')]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box-tinlienquanv2 ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' box_brief_info ')]"
+      ]
+    },
+    "vov.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' text-long ')]",
+      "image" : "//*[contains(concat(' ',normalize-space(@class),' '),' article-image ')]//img",
+      "lead" : "//div[contains(concat(' ',normalize-space(@class),' '),' article-summary ')]",
+      "list" : {
+        "item" : "//div[contains(concat(' ',normalize-space(@class),' '),' article-card ')]",
+        "link" : "(.//a[.//h3][@href] | .//h3//a[@href] | .//a[@href])[1]",
+        "sections" : [
+          "/xa-hoi"
+        ],
+        "title" : ".//h3"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' related-news ')]"
+      ]
+    },
+    "vtcnews.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' edittor-content ')]",
+      "list" : {
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' distance ')] | //article[contains(concat(' ',normalize-space(@class),' '),' latest-home-item ')] | //article[contains(concat(' ',normalize-space(@class),' '),' clearfix ')][.//h3]",
+        "link" : "(.//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/thoi-su-28.html"
+        ],
+        "time" : ".//*[@datetime]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' related-news-list ')]"
+      ]
+    },
+    "vtv.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' detail-content ')]",
+      "lead" : "//p[contains(concat(' ',normalize-space(@class),' '),' sapo ')]",
+      "list" : {
+        "image" : ".//img[contains(concat(' ',normalize-space(@class),' '),' box-category-avatar ')]",
+        "item" : "//*[contains(concat(' ',normalize-space(@class),' '),' box-category-item ')]",
+        "link" : "(.//a[contains(concat(' ',normalize-space(@class),' '),' box-category-link-title ')][@href] | .//h3//a[@href] | .//h2//a[@href])[1]",
+        "sections" : [
+          "/xa-hoi.htm"
+        ],
+        "summary" : ".//*[contains(concat(' ',normalize-space(@class),' '),' box-category-sapo ')]",
+        "time" : ".//*[contains(concat(' ',normalize-space(@class),' '),' time-ago ')][@title]"
+      },
+      "removed" : [
+        ".//*[@type='RelatedOneNews']",
+        ".//*[@type='RelatedNewsBox']"
+      ]
+    },
+    "znews.vn" : {
+      "body" : "//div[contains(concat(' ',normalize-space(@class),' '),' the-article-body ')]",
+      "lead" : "//p[contains(concat(' ',normalize-space(@class),' '),' the-article-summary ')]",
+      "list" : {
+        "image" : ".//*[contains(concat(' ',normalize-space(@class),' '),' article-thumbnail ')]//img",
+        "item" : "//article[contains(concat(' ',normalize-space(@class),' '),' article-item ')]",
+        "link" : ".//*[contains(concat(' ',normalize-space(@class),' '),' article-title ')]//a[@href]",
+        "sections" : [
+          "/xa-hoi.html"
+        ],
+        "summary" : ".//p[contains(concat(' ',normalize-space(@class),' '),' article-summary ')]"
+      },
+      "removed" : [
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' inner-article ')]",
+        ".//*[contains(concat(' ',normalize-space(@class),' '),' article-related ')]"
+      ]
+    }
+  },
+  "notice" : "© Vu Huynh. Phần tuyển chọn, sắp xếp và quy tắc trích xuất cho ứng dụng Hóng. Không cấp phép sao chép hay tái sử dụng. Tên, nhãn hiệu và thông tin giấy phép của các cơ quan báo chí thuộc về chủ sở hữu và chỉ được liệt kê để tham khảo. Không ngụ ý hợp tác hay bảo trợ. Yêu cầu gỡ bỏ: cyonlong@gmail.com, xử lý trong 24 giờ.\n© Vu Huynh. Selection, arrangement and extraction rules for the Hóng app. Not licensed for copying or reuse. Publisher names, marks and licence details belong to their owners and are listed for reference only. No partnership or endorsement is implied. Removal requests: cyonlong@gmail.com, handled within 24 hours."
+}

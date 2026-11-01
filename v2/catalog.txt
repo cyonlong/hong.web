@@ -1,0 +1,732 @@
+hong-envelope-v2
+eyJrZXlJRCI6InByaW1hcnkiLCJraW5kIjoiY2F0YWxvZyIsIm1pbkFwcFZlcnNpb24iOiIwLjIuMCIsIm5vdEFmdGVyIjoiMjAyNi0xMi0xNlQxNDo0ODo0M1oiLCJzb3VyY2VJRCI6ImhvbmciLCJ2ZXJzaW9uIjoxNzkzNTQ0NTIzfQ==
+yW6DFoJXSkjVs5eaFWqxDlqRNkyoNVuu1ERCvd8FUKUu3kdxSX5ct3uHx/EEug7MdCm+Qx1vKCapFHq//9m9CQ==
+{
+  "entries" : [
+    {
+      "agency" : "Bộ Khoa học và Công nghệ",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vnexpress.net",
+      "id" : "vnexpress",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "548/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://vnexpress.net/"
+        },
+        {
+          "title" : "Tin 24h",
+          "url" : "https://vnexpress.net/tin-tuc-24h"
+        }
+      ],
+      "name" : "VnExpress",
+      "popular" : 1,
+      "removed" : false,
+      "topics" : [
+        "Thế giới",
+        "Kinh doanh",
+        "Công nghệ",
+        "Khoa học",
+        "Giáo dục",
+        "Du lịch",
+        "Xe"
+      ]
+    },
+    {
+      "agency" : "Cơ quan Báo và Phát thanh, Truyền hình TP.HCM",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "tuoitre.vn",
+      "id" : "tuoitre",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "561/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Tin mới nhất",
+          "url" : "https://tuoitre.vn/tin-moi-nhat.htm"
+        },
+        {
+          "title" : "Pháp Luật TP.HCM",
+          "url" : "https://tuoitre.vn/tto-plo.htm"
+        },
+        {
+          "title" : "Người Lao Động",
+          "url" : "https://tuoitre.vn/tto-nld.htm"
+        }
+      ],
+      "name" : "Tuổi Trẻ",
+      "popular" : 2,
+      "removed" : false,
+      "topics" : [
+        "Giáo dục",
+        "Đời sống",
+        "Xe",
+        "Giao thông"
+      ]
+    },
+    {
+      "agency" : "Bộ Nội vụ",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "dantri.com.vn",
+      "id" : "dantri",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "15/GP-BVHTTDL",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://dantri.com.vn/"
+        },
+        {
+          "title" : "Thời sự",
+          "url" : "https://dantri.com.vn/thoi-su.htm"
+        }
+      ],
+      "name" : "Dân trí",
+      "popular" : 4,
+      "removed" : false,
+      "topics" : [
+        "Giáo dục",
+        "Việc làm",
+        "Đời sống",
+        "Xe"
+      ]
+    },
+    {
+      "agency" : "Trung ương Hội LHTN Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "thanhnien.vn",
+      "id" : "thanhnien",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "110/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://thanhnien.vn/"
+        },
+        {
+          "title" : "Thời sự",
+          "url" : "https://thanhnien.vn/thoi-su.htm"
+        }
+      ],
+      "name" : "Thanh Niên",
+      "popular" : 3,
+      "removed" : false,
+      "topics" : [
+        "Giáo dục",
+        "Đời sống",
+        "Game"
+      ]
+    },
+    {
+      "agency" : "Bộ Dân tộc và Tôn giáo",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vietnamnet.vn",
+      "id" : "vietnamnet",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "146/GP-BVHTTDL",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://vietnamnet.vn/"
+        },
+        {
+          "title" : "Thời sự",
+          "url" : "https://vietnamnet.vn/thoi-su"
+        }
+      ],
+      "name" : "VietNamNet",
+      "popular" : 5,
+      "removed" : false,
+      "topics" : [
+        "Công nghệ",
+        "Giáo dục",
+        "Bất động sản"
+      ]
+    },
+    {
+      "agency" : "Tổng Liên đoàn Lao động Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "laodong.vn",
+      "id" : "laodong",
+      "ingest" : "browser",
+      "kind" : "press",
+      "listPages" : [
+
+      ],
+      "name" : "Lao Động",
+      "removed" : false,
+      "topics" : [
+        "Việc làm"
+      ]
+    },
+    {
+      "agency" : "Trung ương Đoàn TNCS Hồ Chí Minh",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "tienphong.vn",
+      "id" : "tienphong",
+      "ingest" : "list",
+      "kind" : "press",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://tienphong.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://tienphong.vn/xa-hoi/"
+        }
+      ],
+      "name" : "Tiền Phong",
+      "removed" : false,
+      "topics" : [
+        "Môi trường",
+        "Giáo dục"
+      ]
+    },
+    {
+      "agency" : "Tạp chí Bóng đá",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "bongdaplus.vn",
+      "id" : "bongdaplus",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "48/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://bongdaplus.vn/"
+        }
+      ],
+      "name" : "Bóng Đá Plus",
+      "removed" : false,
+      "topics" : [
+        "Thể thao"
+      ]
+    },
+    {
+      "agency" : "Trung ương Hội Nông dân Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "danviet.vn",
+      "id" : "danviet",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "115/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://danviet.vn/"
+        },
+        {
+          "title" : "Kinh tế",
+          "url" : "https://danviet.vn/kinh-te/"
+        }
+      ],
+      "name" : "Dân Việt",
+      "removed" : false
+    },
+    {
+      "agency" : "Hội Xuất bản Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "znews.vn",
+      "id" : "znews",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "442/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://znews.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://znews.vn/xa-hoi.html"
+        }
+      ],
+      "name" : "Znews",
+      "popular" : 6,
+      "removed" : false,
+      "topics" : [
+        "Công nghệ",
+        "Xe",
+        "Giải trí"
+      ]
+    },
+    {
+      "agency" : "Đài Tiếng nói Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vov.vn",
+      "id" : "vov",
+      "ingest" : "list",
+      "kind" : "press",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://vov.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://vov.vn/xa-hoi"
+        }
+      ],
+      "name" : "VOV",
+      "removed" : false,
+      "topics" : [
+        "Thời tiết",
+        "Giao thông"
+      ]
+    },
+    {
+      "agency" : "Trung ương Đảng",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "nhandan.vn",
+      "id" : "nhandan",
+      "ingest" : "list",
+      "kind" : "press",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://nhandan.vn/"
+        },
+        {
+          "title" : "Chính trị",
+          "url" : "https://nhandan.vn/chinhtri/"
+        }
+      ],
+      "name" : "Nhân Dân",
+      "removed" : false
+    },
+    {
+      "agency" : "Bộ Quốc phòng",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "qdnd.vn",
+      "id" : "qdnd",
+      "ingest" : "browser",
+      "kind" : "press",
+      "listPages" : [
+
+      ],
+      "name" : "Quân đội Nhân dân",
+      "removed" : false
+    },
+    {
+      "agency" : "Đài Truyền hình Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vtv.vn",
+      "id" : "vtv",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "483/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://vtv.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://vtv.vn/xa-hoi.htm"
+        }
+      ],
+      "name" : "VTV",
+      "removed" : false,
+      "topics" : [
+        "Thời tiết",
+        "Thế giới"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vtcnews.vn",
+      "id" : "vtcnews",
+      "ingest" : "list",
+      "kind" : "press",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://vtcnews.vn/"
+        },
+        {
+          "title" : "Thời sự",
+          "url" : "https://vtcnews.vn/thoi-su-28.html"
+        }
+      ],
+      "name" : "VTC News",
+      "removed" : false
+    },
+    {
+      "agency" : "Văn phòng Chính phủ",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "baochinhphu.vn",
+      "id" : "baochinhphu",
+      "ingest" : "list",
+      "kind" : "press",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://baochinhphu.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://baochinhphu.vn/xa-hoi.htm"
+        }
+      ],
+      "name" : "Báo Chính phủ",
+      "removed" : false,
+      "topics" : [
+        "Kinh doanh"
+      ]
+    },
+    {
+      "agency" : "Cơ quan Báo và Phát thanh, Truyền hình TP.HCM",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "sggp.org.vn",
+      "id" : "sggp",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "305/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://www.sggp.org.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://www.sggp.org.vn/xa-hoi/"
+        }
+      ],
+      "name" : "Sài Gòn Giải Phóng",
+      "removed" : false
+    },
+    {
+      "agency" : "Thông tấn xã Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vietnamplus.vn",
+      "id" : "vietnamplus",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "1374/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://www.vietnamplus.vn/"
+        },
+        {
+          "title" : "Chính trị",
+          "url" : "https://www.vietnamplus.vn/chinhtri/"
+        }
+      ],
+      "name" : "VietnamPlus",
+      "removed" : false
+    },
+    {
+      "agency" : "Hội Khoa học Kinh tế Việt Nam",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "vneconomy.vn",
+      "id" : "vneconomy",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "272/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://vneconomy.vn/"
+        },
+        {
+          "title" : "Kinh tế số",
+          "url" : "https://vneconomy.vn/kinh-te-so.htm"
+        }
+      ],
+      "name" : "VnEconomy",
+      "removed" : false,
+      "topics" : [
+        "Kinh doanh",
+        "Tài chính"
+      ]
+    },
+    {
+      "agency" : "Bộ Công an",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "cand.vn",
+      "id" : "cand",
+      "ingest" : "list",
+      "kind" : "press",
+      "licence" : "08/GP-BTTTT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://cand.vn/"
+        },
+        {
+          "title" : "Thời sự",
+          "url" : "https://cand.vn/thoi-su/"
+        }
+      ],
+      "name" : "Công an Nhân dân",
+      "removed" : false
+    },
+    {
+      "agency" : "Đã sáp nhập vào Tuổi Trẻ: chọn Tuổi Trẻ để đọc tin Người Lao Động",
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "nld.com.vn",
+      "id" : "nld",
+      "ingest" : "unavailable",
+      "kind" : "press",
+      "listPages" : [
+
+      ],
+      "name" : "Người Lao Động",
+      "removed" : false,
+      "topics" : [
+        "Việc làm",
+        "Giao thông"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "thethao247.vn",
+      "id" : "thethao247",
+      "ingest" : "list",
+      "kind" : "infoSite",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://thethao247.vn/"
+        }
+      ],
+      "name" : "Thể Thao 247",
+      "removed" : false,
+      "topics" : [
+        "Thể thao"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : false,
+      "host" : "baomoi.com",
+      "id" : "baomoi",
+      "ingest" : "list",
+      "kind" : "aggregator",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://baomoi.com/"
+        },
+        {
+          "title" : "Tin mới",
+          "url" : "https://baomoi.com/tin-moi.epi"
+        }
+      ],
+      "name" : "Báo Mới",
+      "removed" : false
+    },
+    {
+      "extraHosts" : [
+        "cdn.24h.com.vn"
+      ],
+      "fullText" : true,
+      "host" : "24h.com.vn",
+      "id" : "24h",
+      "ingest" : "list",
+      "kind" : "infoSite",
+      "licence" : "332/GP-TTĐT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://www.24h.com.vn/"
+        },
+        {
+          "title" : "Ngoại hạng Anh",
+          "url" : "https://www.24h.com.vn/bong-da-ngoai-hang-anh-c149.html"
+        }
+      ],
+      "name" : "24h",
+      "removed" : false,
+      "topics" : [
+        "Thể thao",
+        "Giải trí",
+        "Đời sống"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "kenh14.vn",
+      "id" : "kenh14",
+      "ingest" : "list",
+      "kind" : "infoSite",
+      "licence" : "2215/GP-TTĐT",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://kenh14.vn/"
+        },
+        {
+          "title" : "Xã hội",
+          "url" : "https://kenh14.vn/xa-hoi.chn"
+        }
+      ],
+      "name" : "Kenh14",
+      "removed" : false,
+      "topics" : [
+        "Giải trí",
+        "Đời sống"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "soha.vn",
+      "id" : "soha",
+      "ingest" : "list",
+      "kind" : "infoSite",
+      "licence" : "2411/GP-TTĐT",
+      "listPages" : [
+        {
+          "title" : "Thời sự - Xã hội",
+          "url" : "https://soha.vn/thoi-su-xa-hoi.htm"
+        }
+      ],
+      "name" : "Soha",
+      "removed" : false,
+      "topics" : [
+        "Đời sống",
+        "Thế giới"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "cafef.vn",
+      "id" : "cafef",
+      "ingest" : "list",
+      "kind" : "infoSite",
+      "licence" : "2216/GP-TTĐT",
+      "listPages" : [
+        {
+          "title" : "Xã hội",
+          "url" : "https://cafef.vn/xa-hoi.chn"
+        }
+      ],
+      "name" : "CafeF",
+      "removed" : false,
+      "topics" : [
+        "Kinh doanh",
+        "Tài chính",
+        "Bất động sản"
+      ]
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : true,
+      "host" : "voz.vn",
+      "id" : "voz",
+      "ingest" : "forum",
+      "kind" : "forum",
+      "listPages" : [
+
+      ],
+      "name" : "Diễn đàn",
+      "removed" : false
+    },
+    {
+      "extraHosts" : [
+
+      ],
+      "fullText" : false,
+      "host" : "tinhte.vn",
+      "id" : "tinhte",
+      "ingest" : "list",
+      "kind" : "infoSite",
+      "licence" : "41/GP-BVHTTDL",
+      "listPages" : [
+        {
+          "title" : "Trang chủ",
+          "url" : "https://tinhte.vn/"
+        }
+      ],
+      "name" : "Tinh tế",
+      "removed" : false
+    }
+  ],
+  "notice" : "© Vu Huynh. Phần tuyển chọn, sắp xếp và quy tắc trích xuất cho ứng dụng Hóng. Không cấp phép sao chép hay tái sử dụng. Tên, nhãn hiệu và thông tin giấy phép của các cơ quan báo chí thuộc về chủ sở hữu và chỉ được liệt kê để tham khảo. Không ngụ ý hợp tác hay bảo trợ. Yêu cầu gỡ bỏ: cyonlong@gmail.com, xử lý trong 24 giờ.\n© Vu Huynh. Selection, arrangement and extraction rules for the Hóng app. Not licensed for copying or reuse. Publisher names, marks and licence details belong to their owners and are listed for reference only. No partnership or endorsement is implied. Removal requests: cyonlong@gmail.com, handled within 24 hours."
+}

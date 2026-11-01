@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hong-User – Hóng</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><a href="./">Hỗ trợ</a><a href="privacy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a></nav>
+<h1>Hong-User</h1>
+<p><code>Hong-User/1.0</code> là định danh của ứng dụng Hóng, một trình duyệt thông minh, khi <strong>chính người dùng</strong> mở một trang báo hay diễn đàn trên điện thoại của họ. Hóng không có máy chủ, không thu thập (crawl) và không tải trước: mỗi request là một lần người dùng chạm.</p>
+<p><code>Hong-Refresh/1.0</code> là định danh khi người dùng <strong>tự bật</strong> "Báo tin mới": iOS cho Hóng kiểm tra trang danh sách tin của các nguồn người dùng đã chọn vài lần mỗi ngày (mỗi trang tối đa 1 request mỗi lần, 6 lần mỗi ngày). Token này được xem là crawler: chỉ xét nhóm robots.txt <code>Hong-Refresh</code> rồi <code>*</code>, tôn trọng <code>Crawl-delay</code> và <code>Content-Signal: ai-input=no</code>, lùi 24 giờ khi gặp 429/503, không bao giờ tải trang bài viết hay diễn đàn trong nền.</p>
+<h2>Hóng tôn trọng</h2>
+<ul>
+<li><code>robots.txt</code>: nhóm <code>Hong-User</code>, sau đó <code>ChatGPT-User</code>/<code>Perplexity-User</code>, rồi <code>*</code>; cả <code>Content-Signal: ai-input=no</code>.</li>
+<li><code>noarchive</code>: Hóng không lưu bản sao nào của trang bài: chữ và ảnh của bài chỉ nằm trong bộ nhớ khi người dùng đang đọc; chỉ danh sách tiêu đề được giữ trên máy tới lần làm mới sau.</li>
+<li>Thẻ và header <code>noai</code>, <code>nosnippet</code>, <code>none</code>, <code>max-snippet</code>, <code>data-nosnippet</code>, <code>X-Robots-Tag</code>, <code>tdm-reservation: 1</code>.</li>
+<li>Paywall và trang đăng nhập: Hóng không vượt qua, chỉ đưa người dùng tới trang gốc.</li>
+<li>Danh mục tham khảo: Hóng có danh sách các báo và diễn đàn người dùng có thể chọn ("Trang Hóng đọc được"); không trang nào là đối tác. Cách đọc mỗi trang nằm trong mẫu đọc công khai, có chữ ký, trên hong.cyon.vn. Hóng không dùng RSS: mỗi lần người dùng bấm Làm mới, Hóng đọc tối đa 3 trang danh sách tin (trang chủ hoặc chuyên mục) của mỗi báo, sau khi kiểm tra robots.txt. Với diễn đàn, mỗi lần chạm là một trang.</li>
+<li>Chủ trang, dù là báo hay diễn đàn, có thể yêu cầu gỡ hoặc giới hạn mẫu đọc của mình (chỉ hiển thị tiêu đề, chỉ đọc, hoặc gỡ hẳn).</li>
+</ul>
+<p>Khi trang không cho phép, Hóng chỉ hiện tên trang, tiêu đề và nút mở trang gốc. Tóm tắt AI chạy trên máy người dùng, ngắn, có ghi nguồn, không lưu và không chia sẻ.</p>
+<h2>Chặn hoặc liên hệ</h2>
+<p>Thêm vào robots.txt:</p>
+<pre>User-agent: Hong-Refresh
+Disallow: /
+
+User-agent: Hong-User
+Disallow: /</pre>
+<p>hoặc email <a href="mailto:cyonlong@gmail.com">cyonlong@gmail.com</a>; yêu cầu gỡ hoặc giới hạn được xử lý trong 24 giờ, qua tệp trạng thái và danh mục có chữ ký của Hóng.</p>
+<hr>
+<p lang="en"><code>Hong-User/1.0</code> identifies the Hóng app, a smart browser, when a user opens a page of a news site or forum on their own phone. No server, no crawling, no prefetch. It honours robots.txt (Hong-User, then ChatGPT-User/Perplexity-User, then *), Content-Signal ai-input=no, noai/nosnippet/none/max-snippet/data-nosnippet (noarchive: no copy of an article page is kept; its text and pictures stay in memory while read, only the headline list is kept until the next refresh), X-Robots-Tag and TDMRep, and never bypasses paywalls. With the user's opt-in, <code>Hong-Refresh/1.0</code> checks only the list pages of sources they chose (no RSS) (one request per site per run, at most 6 a day), as a crawler: robots.txt groups Hong-Refresh then *, Crawl-delay, Content-Signal ai-input=no, 24 h back-off on 429/503, never article pages or forums. The owner of any site, paper or forum, may ask to remove or limit its reading template (headlines only, read-only, or removed). To block either token, disallow <code>Hong-User</code> or <code>Hong-Refresh</code>, or email cyonlong@gmail.com (handled within 24 hours).</p>
+</body>
+</html>

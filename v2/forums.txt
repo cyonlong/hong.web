@@ -1,0 +1,780 @@
+hong-envelope-v2
+eyJrZXlJRCI6InByaW1hcnkiLCJraW5kIjoiZm9ydW1zIiwibWluQXBwVmVyc2lvbiI6IjAuMi4wIiwibm90QWZ0ZXIiOiIyMDI3LTAxLTMwVDE1OjA5OjUwWiIsInNvdXJjZUlEIjoiaG9uZyIsInZlcnNpb24iOjE3OTM1NDU3OTB9
+9lu/xGQjUMA0EBvQTQ+BgilYVq4zQl+HNz2GrTZeKBX+7KsXrJ+hD4JhpZctFGClv10TgpwuXwwuTAnD8mSNBg==
+{
+  "forums" : [
+    {
+      "actions" : {
+        "bookmark" : {
+          "fields" : [
+            {
+              "name" : "delete",
+              "requires" : "stop",
+              "value" : "1"
+            }
+          ],
+          "method" : "POST",
+          "path" : "/p/{post}/bookmark",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "deletePost" : {
+          "fields" : [
+            {
+              "from" : "reason",
+              "name" : "reason"
+            },
+            {
+              "name" : "hard_delete",
+              "value" : "0"
+            }
+          ],
+          "method" : "POST",
+          "path" : "/posts/{post}/delete",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "editPost" : {
+          "fields" : [
+            {
+              "from" : "message",
+              "name" : "message"
+            },
+            {
+              "name" : "_xfInlineEdit",
+              "value" : "1"
+            }
+          ],
+          "method" : "POST",
+          "path" : "/p/{post}/edit",
+          "response" : {
+            "errors" : "errors",
+            "fragments" : [
+              "html.content"
+            ],
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "ignoreMember" : {
+          "method" : "POST",
+          "path" : "/u/{member}/ignore",
+          "requestURI" : "/u/{member}/",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "importIgnored" : {
+          "method" : "GET",
+          "path" : "/account/ignored"
+        },
+        "inviteConversation" : {
+          "fields" : [
+            {
+              "from" : "recipients",
+              "name" : "recipients"
+            }
+          ],
+          "method" : "POST",
+          "path" : "{base}invite",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "leaveConversation" : {
+          "fields" : [
+            {
+              "name" : "recipient_state",
+              "value" : "deleted"
+            }
+          ],
+          "method" : "POST",
+          "path" : "{base}leave",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "markForumRead" : {
+          "fields" : [
+            {
+              "from" : "nowUnix",
+              "name" : "date"
+            }
+          ],
+          "method" : "POST",
+          "path" : "{base}mark-read",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "react" : {
+          "method" : "POST",
+          "path" : "/p/{post}/react",
+          "query" : [
+            {
+              "from" : "reactionID",
+              "name" : "reaction_id"
+            }
+          ],
+          "response" : {
+            "errors" : "errors",
+            "fragments" : [
+              "reactionList.content",
+              "html.content"
+            ],
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "reply" : {
+          "fields" : [
+            {
+              "from" : "message",
+              "name" : "message"
+            },
+            {
+              "from" : "attachmentHash",
+              "name" : "attachment_hash",
+              "optional" : true
+            },
+            {
+              "from" : "attachmentHashCombined",
+              "name" : "attachment_hash_combined",
+              "optional" : true
+            },
+            {
+              "from" : "lastDate",
+              "name" : "last_date",
+              "optional" : true
+            },
+            {
+              "name" : "load_extra",
+              "requires" : "lastDate",
+              "value" : "1"
+            }
+          ],
+          "method" : "POST",
+          "path" : "{base}add-reply",
+          "response" : {
+            "errors" : "errors",
+            "fragments" : [
+              "html.content"
+            ],
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "report" : {
+          "fields" : [
+            {
+              "from" : "reason",
+              "name" : "message"
+            }
+          ],
+          "method" : "POST",
+          "path" : "/p/{post}/report",
+          "requestURI" : "/p/{post}/",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "startConversation" : {
+          "fields" : [
+            {
+              "from" : "recipients",
+              "name" : "recipients"
+            },
+            {
+              "from" : "title",
+              "name" : "title"
+            },
+            {
+              "from" : "message",
+              "name" : "message"
+            }
+          ],
+          "method" : "POST",
+          "path" : "/direct-messages/add",
+          "requestURI" : "/direct-messages/",
+          "response" : {
+            "errors" : "errors",
+            "fragments" : [
+              "html.content"
+            ],
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "upload" : {
+          "encoding" : "multipart",
+          "method" : "POST",
+          "path" : "/attachments/upload",
+          "query" : [
+            {
+              "from" : "attachmentType",
+              "name" : "type"
+            },
+            {
+              "from" : "attachmentContextID",
+              "name" : "context[{contextKey}]"
+            },
+            {
+              "from" : "attachmentHash",
+              "name" : "hash"
+            }
+          ],
+          "requestURI" : "/",
+          "response" : {
+            "attachmentID" : "attachment.attachment_id",
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status",
+            "thumbnail" : "attachment.thumbnail_url"
+          }
+        },
+        "watchForum" : {
+          "fields" : [
+            {
+              "name" : "notify",
+              "requires" : "enable",
+              "value" : "thread"
+            },
+            {
+              "name" : "send_alert",
+              "requires" : "enable",
+              "value" : "1"
+            },
+            {
+              "name" : "send_email",
+              "requires" : "enable",
+              "value" : "0"
+            },
+            {
+              "name" : "stop",
+              "requires" : "stop",
+              "value" : "1"
+            }
+          ],
+          "method" : "POST",
+          "path" : "{base}watch",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        },
+        "watchThread" : {
+          "fields" : [
+            {
+              "name" : "stop",
+              "requires" : "stop",
+              "value" : "1"
+            }
+          ],
+          "method" : "POST",
+          "path" : "{base}watch",
+          "response" : {
+            "errors" : "errors",
+            "message" : "message",
+            "redirect" : "redirect",
+            "status" : "status"
+          }
+        }
+      },
+      "attachments" : {
+        "conversation" : {
+          "key" : "conversation_id",
+          "type" : "conversation_message"
+        },
+        "thread" : {
+          "key" : "thread_id",
+          "type" : "post"
+        }
+      },
+      "challenge" : {
+        "blockedPathPrefixes" : [
+          "/js/",
+          "/pinecone/",
+          "/styles/"
+        ],
+        "readyRootID" : "XF"
+      },
+      "hosts" : [
+        "voz.vn",
+        "www.voz.vn",
+        "next.voz.vn"
+      ],
+      "id" : "voz",
+      "markup" : {
+        "avatarHosts" : [
+          "data.voz.vn"
+        ],
+        "imageHosts" : [
+          "data.voz.vn"
+        ],
+        "quoteParts" : [
+          "{author}",
+          "post: {post}",
+          "member: {member}"
+        ],
+        "quoteSaidSuffix" : " đã nói:",
+        "smilies" : [
+          {
+            "code" : ":big_smile:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/big_smile.png?v=01"
+          },
+          {
+            "code" : ":beauty:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/beauty.png?v=01"
+          },
+          {
+            "code" : ":confident:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/confident.png?v=01"
+          },
+          {
+            "code" : ":hell_boy:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/hell_boy.png?v=01"
+          },
+          {
+            "code" : ":byebye:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/byebye.png?v=01"
+          },
+          {
+            "code" : ":adore:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/adore.png?v=01"
+          },
+          {
+            "code" : ":haha:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/haha.png?v=01"
+          },
+          {
+            "code" : ":doubt:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/doubt.png?v=01"
+          },
+          {
+            "code" : ":cry:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/cry.png?v=01"
+          },
+          {
+            "code" : ":amazed:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/amazed.png?v=01"
+          },
+          {
+            "code" : ":feel_good:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/feel_good.png?v=01"
+          },
+          {
+            "code" : ":go:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/go.png?v=01"
+          },
+          {
+            "code" : ":beat_shot:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/beat_shot.png?v=01"
+          },
+          {
+            "code" : ":matrix:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/matrix.png?v=01"
+          },
+          {
+            "code" : ":nosebleed:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/nosebleed.png?v=01"
+          },
+          {
+            "code" : ":sure:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/sure.png?v=01"
+          },
+          {
+            "code" : ":ah:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popopo/ah.png?v=01"
+          },
+          {
+            "code" : ":)",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popo/smile.png?v=01"
+          },
+          {
+            "code" : ":D",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popo/biggrin.png?v=01"
+          },
+          {
+            "code" : ":(",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popo/frown.png?v=02"
+          },
+          {
+            "code" : "=))",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popo/laugh.png?v=01"
+          },
+          {
+            "code" : ":love:",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popo/inlove.png?v=01"
+          },
+          {
+            "code" : "=((",
+            "url" : "https://data.voz.vn/styles/next/xenforo/smilies/popo/cry.png?v=01"
+          }
+        ]
+      },
+      "name" : "voz",
+      "platform" : "xenforo2",
+      "reactions" : {
+        "kinds" : [
+          {
+            "id" : 1,
+            "title" : "Ưng"
+          },
+          {
+            "id" : 2,
+            "title" : "Gạch"
+          }
+        ],
+        "othersPattern" : "{names} và {n} người khác",
+        "you" : "Bạn"
+      },
+      "routes" : {
+        "builders" : {
+          "alerts" : "/account/alerts",
+          "bookmarks" : "/account/bookmarks",
+          "conversations" : "/direct-messages/",
+          "forum" : "/f/{slug.}{id}/",
+          "forumPage" : "/f/{slug.}{id}/page-{page}",
+          "goto" : "/goto/post?id={post}",
+          "ignored" : "/account/ignored",
+          "index" : "/",
+          "member" : "/u/{member}/",
+          "newThread" : "{base}post-thread",
+          "post" : "/p/{post}/",
+          "postEdit" : "/p/{post}/edit",
+          "postReport" : "/posts/{post}/report",
+          "reactions" : "/p/{post}/reactions",
+          "search" : "/search/search",
+          "thread" : "/t/{slug.}{id}/",
+          "threadLatest" : "/t/{slug.}{id}/latest",
+          "threadPage" : "/t/{slug.}{id}/page-{page}",
+          "threadUnread" : "/t/{slug.}{id}/unread",
+          "watched" : "/watched/threads",
+          "whatsNew" : "/whats-new/posts/"
+        },
+        "patterns" : {
+          "attachment" : [
+            "/attachments/{dotid}/"
+          ],
+          "forum" : [
+            "/f/{slugid}/{tail*}"
+          ],
+          "goto" : [
+            "/goto/post?id={post:int}"
+          ],
+          "member" : [
+            "/u/{dotid}/",
+            "/members/{dotid}/"
+          ],
+          "post" : [
+            "/p/{id:int}/",
+            "/posts/{id:int}/"
+          ],
+          "reactions" : [
+            "/p/{id:int}/reactions",
+            "/posts/{id:int}/reactions"
+          ],
+          "thread" : [
+            "/t/{slugid}/{tail*}"
+          ]
+        },
+        "postAnchors" : [
+          "post-{post:int}",
+          "js-post-{post:int}"
+        ],
+        "threadTail" : {
+          "latest" : "latest",
+          "page" : "page-{page:int}",
+          "post" : "post-{post:int}",
+          "unread" : "unread"
+        }
+      },
+      "selectors" : {
+        "Account.ignoredMembers" : "//*[contains(@class, 'p-body-pageContent') and contains(concat(' ', normalize-space(@class), ' '), ' p-body-pageContent ')]//a[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ') and @data-user-id]",
+        "Alerts.links" : ".//a[@href]",
+        "Alerts.main" : ".//*[contains(@class, 'contentRow-main') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-main ')]",
+        "Alerts.minor" : ".//*[contains(@class, 'contentRow-minor') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-minor ')]",
+        "Alerts.rows" : "//li[contains(@class, 'alert') and contains(concat(' ', normalize-space(@class), ' '), ' alert ')]",
+        "Alerts.time" : ".//time[@data-timestamp]",
+        "Alerts.unreadClass" : "is-unread",
+        "BBCode.code" : "bbCodeBlock--code",
+        "BBCode.codePre" : ".//pre",
+        "BBCode.genericBlock" : "bbCodeBlock",
+        "BBCode.image" : "bbImage",
+        "BBCode.imageWrapper" : "bbImageWrapper",
+        "BBCode.media" : "bbMediaWrapper",
+        "BBCode.quote" : "bbCodeBlock--quote",
+        "BBCode.quoteContent" : "./div[contains(@class, 'bbCodeBlock-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-content ')]/div[contains(@class, 'bbCodeBlock-expandContent') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-expandContent ')]",
+        "BBCode.quoteContentFallback" : "./div[contains(@class, 'bbCodeBlock-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-content ')]",
+        "BBCode.quoteSaidSuffix" : " đã nói:",
+        "BBCode.quoteTitleLink" : "./div[contains(@class, 'bbCodeBlock-title') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-title ')]//a",
+        "BBCode.smilie" : "smilie",
+        "BBCode.spoiler" : "bbCodeSpoiler",
+        "BBCode.spoilerContent" : "./div[contains(@class, 'bbCodeSpoiler-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeSpoiler-content ')]/div/div[contains(@class, 'bbCodeBlock-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-content ')]",
+        "BBCode.spoilerTitle" : "./button//span[contains(@class, 'bbCodeSpoiler-button-title') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeSpoiler-button-title ')]",
+        "BBCode.unfurl" : "bbCodeBlock--unfurl",
+        "Bookmarks.author" : ".//*[contains(@class, 'contentRow-minor') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-minor ')]//*[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ')]",
+        "Bookmarks.rows" : "//*[contains(@class, 'contentRow-main') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-main ')]",
+        "Bookmarks.snippet" : ".//*[contains(@class, 'contentRow-snippet') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-snippet ')]",
+        "Bookmarks.time" : ".//time[@data-timestamp]",
+        "Bookmarks.titleLink" : ".//*[contains(@class, 'contentRow-title') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-title ')]//a[@href]",
+        "Conversations.latestDate" : ".//div[contains(@class, 'structItem-cell--latest') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-cell--latest ')]//time",
+        "Conversations.messages" : "//article[contains(@class, 'message--conversationMessage') and contains(concat(' ', normalize-space(@class), ' '), ' message--conversationMessage ')]",
+        "Conversations.participants" : ".//ul[contains(@class, 'structItem-parts') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-parts ')]//*[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ')]",
+        "Conversations.replies" : ".//div[contains(@class, 'structItem-cell--meta') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-cell--meta ')]//dd",
+        "Conversations.rows" : "//div[contains(@class, 'structItem--conversation') and contains(concat(' ', normalize-space(@class), ' '), ' structItem--conversation ')]",
+        "Conversations.titleLink" : ".//div[contains(@class, 'structItem-title') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-title ')]/a[last()]",
+        "Conversations.unreadClass" : "is-unread",
+        "ErrorPage.boardClosedTemplate" : "board_closed",
+        "ErrorPage.errorTemplate" : "error",
+        "ErrorPage.message" : "//*[contains(@class, 'blockMessage') and contains(concat(' ', normalize-space(@class), ' '), ' blockMessage ')]",
+        "ForumList.categories" : "//div[contains(@class, 'block--category') and contains(concat(' ', normalize-space(@class), ' '), ' block--category ')]",
+        "ForumList.categoryAnchor" : ".//span[contains(@class, 'u-anchorTarget') and contains(concat(' ', normalize-space(@class), ' '), ' u-anchorTarget ')]",
+        "ForumList.categoryTitle" : ".//*[contains(@class, 'block-header') and contains(concat(' ', normalize-space(@class), ' '), ' block-header ')]/a",
+        "ForumList.latestAuthor" : ".//*[contains(@class, 'node-extra-user') and contains(concat(' ', normalize-space(@class), ' '), ' node-extra-user ')]//a",
+        "ForumList.latestDate" : ".//time[contains(@class, 'node-extra-date') and contains(concat(' ', normalize-space(@class), ' '), ' node-extra-date ')]",
+        "ForumList.latestTitle" : ".//a[contains(@class, 'node-extra-title') and contains(concat(' ', normalize-space(@class), ' '), ' node-extra-title ')]",
+        "ForumList.nodes" : ".//div[contains(@class, 'node') and contains(concat(' ', normalize-space(@class), ' '), ' node ')]",
+        "ForumList.nodeStats" : ".//div[contains(@class, 'node-stats') and contains(concat(' ', normalize-space(@class), ' '), ' node-stats ')]//dd",
+        "ForumList.nodeTitleLink" : ".//*[contains(@class, 'node-title') and contains(concat(' ', normalize-space(@class), ' '), ' node-title ')]/a",
+        "ForumList.nodeTitleLinks" : "//*[contains(@class, 'node-title') and contains(concat(' ', normalize-space(@class), ' '), ' node-title ')]/a",
+        "Header.alertsLinkClass" : "p-navgroup-link--alerts",
+        "Header.conversationsLinkClass" : "p-navgroup-link--conversations",
+        "pageTitle" : "//h1[contains(@class, 'p-title-value') and contains(concat(' ', normalize-space(@class), ' '), ' p-title-value ')]",
+        "Paging.canonical" : "//link[@rel='canonical']",
+        "Paging.current" : ".//li[contains(@class, 'pageNav-page--current') and contains(concat(' ', normalize-space(@class), ' '), ' pageNav-page--current ')]/a",
+        "Paging.main" : "//ul[contains(@class, 'pageNav-main') and contains(concat(' ', normalize-space(@class), ' '), ' pageNav-main ')]",
+        "Paging.pages" : "./li[contains(@class, 'pageNav-page') and contains(concat(' ', normalize-space(@class), ' '), ' pageNav-page ')]/a",
+        "ReactionList.member" : ".//*[contains(@class, 'contentRow-header') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-header ')]//a[@data-user-id]",
+        "ReactionList.reaction" : ".//*[contains(@class, 'contentRow-extra') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-extra ')]//*[@data-reaction-id]",
+        "ReactionList.rows" : "//ol[contains(@class, 'js-reactionList-0') and contains(concat(' ', normalize-space(@class), ' '), ' js-reactionList-0 ')]/li",
+        "ReactionList.tabs" : "//*[contains(@class, 'block-minorTabHeader') and contains(concat(' ', normalize-space(@class), ' '), ' block-minorTabHeader ')]//a[contains(@class, 'tabs-tab') and contains(concat(' ', normalize-space(@class), ' '), ' tabs-tab ')]",
+        "ReactionList.time" : ".//time[@data-timestamp]",
+        "Root.username" : "//a[contains(@class, 'p-navgroup-link--user') and contains(concat(' ', normalize-space(@class), ' '), ' p-navgroup-link--user ')]//*[contains(@class, 'p-navgroup-linkText') and contains(concat(' ', normalize-space(@class), ' '), ' p-navgroup-linkText ')]",
+        "Search.author" : ".//*[contains(@class, 'contentRow-minor') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-minor ')]//*[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ')]",
+        "Search.forumLink" : ".//*[contains(@class, 'contentRow-minor') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-minor ')]//a[starts-with(@href, '/f/')]",
+        "Search.rows" : "//li[contains(@class, 'block-row') and contains(concat(' ', normalize-space(@class), ' '), ' block-row ')]//*[contains(@class, 'contentRow-main') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-main ')]",
+        "Search.snippet" : ".//*[contains(@class, 'contentRow-snippet') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-snippet ')]",
+        "Search.time" : ".//time[@data-timestamp]",
+        "Search.titleLabel" : ".//span[contains(@class, 'label') and contains(concat(' ', normalize-space(@class), ' '), ' label ')]",
+        "Search.titleLink" : ".//*[contains(@class, 'contentRow-title') and contains(concat(' ', normalize-space(@class), ' '), ' contentRow-title ')]//a[@href]",
+        "ThreadList.authorAttribute" : "data-author",
+        "ThreadList.forumLink" : ".//ul[contains(@class, 'structItem-parts') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-parts ')]/li/a[starts-with(@href, '/f/')]",
+        "ThreadList.lastPageLink" : ".//span[contains(@class, 'structItem-pageJump') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-pageJump ')]/a[last()]",
+        "ThreadList.latestAuthor" : ".//div[contains(@class, 'structItem-cell--latest') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-cell--latest ')]//*[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ')]",
+        "ThreadList.latestDate" : ".//div[contains(@class, 'structItem-cell--latest') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-cell--latest ')]//time",
+        "ThreadList.metaValues" : ".//div[contains(@class, 'structItem-cell--meta') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-cell--meta ')]//dd",
+        "ThreadList.prefixLabel" : ".//div[contains(@class, 'structItem-title') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-title ')]//span[contains(@class, 'label') and contains(concat(' ', normalize-space(@class), ' '), ' label ')]",
+        "ThreadList.prefixLink" : ".//div[contains(@class, 'structItem-title') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-title ')]//a[contains(@class, 'labelLink') and contains(concat(' ', normalize-space(@class), ' '), ' labelLink ')]",
+        "ThreadList.prefixOptions" : "(//select[@name='prefix_id'])[1]/option[@value!='0']",
+        "ThreadList.startDate" : ".//li[contains(@class, 'structItem-startDate') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-startDate ')]//time",
+        "ThreadList.stickyAncestor" : "ancestor::*[contains(@class, 'structItemContainer-group--sticky') and contains(concat(' ', normalize-space(@class), ' '), ' structItemContainer-group--sticky ')]",
+        "ThreadList.threadItems" : "//div[contains(@class, 'structItem--thread') and contains(concat(' ', normalize-space(@class), ' '), ' structItem--thread ')]",
+        "ThreadList.titleLink" : ".//div[contains(@class, 'structItem-title') and contains(concat(' ', normalize-space(@class), ' '), ' structItem-title ')]/a[last()]",
+        "ThreadView.attachmentHash" : "//input[@name='attachment_hash']",
+        "ThreadView.attachments" : ".//section[contains(@class, 'message-attachments') and contains(concat(' ', normalize-space(@class), ' '), ' message-attachments ')]//a[contains(@class, 'file-preview') and contains(concat(' ', normalize-space(@class), ' '), ' file-preview ')]",
+        "ThreadView.authorLink" : ".//*[contains(@class, 'message-name') and contains(concat(' ', normalize-space(@class), ' '), ' message-name ')]//a[@data-user-id]",
+        "ThreadView.avatarImage" : ".//*[contains(@class, 'message-avatar') and contains(concat(' ', normalize-space(@class), ' '), ' message-avatar ')]//a[contains(@class, 'avatar') and contains(concat(' ', normalize-space(@class), ' '), ' avatar ')]/img[@src]",
+        "ThreadView.bookmarkedClass" : "is-bookmarked",
+        "ThreadView.bookmarkLink" : ".//a[contains(@class, 'bookmarkLink') and contains(concat(' ', normalize-space(@class), ' '), ' bookmarkLink ')]",
+        "ThreadView.myReaction" : ".//a[contains(@class, 'actionBar-action--reaction') and contains(concat(' ', normalize-space(@class), ' '), ' actionBar-action--reaction ') and contains(@class, 'has-reaction') and contains(concat(' ', normalize-space(@class), ' '), ' has-reaction ')]",
+        "ThreadView.pageNav" : "//*[contains(@class, 'pageNav') and contains(concat(' ', normalize-space(@class), ' '), ' pageNav ')]",
+        "ThreadView.postAuthorAttribute" : "data-author",
+        "ThreadView.postBody" : ".//*[contains(@class, 'message-body') and contains(concat(' ', normalize-space(@class), ' '), ' message-body ')]//*[contains(@class, 'bbWrapper') and contains(concat(' ', normalize-space(@class), ' '), ' bbWrapper ')]",
+        "ThreadView.postContentAttribute" : "data-content",
+        "ThreadView.postNumber" : ".//ul[contains(@class, 'message-attribution-opposite') and contains(concat(' ', normalize-space(@class), ' '), ' message-attribution-opposite ')]//a[starts-with(normalize-space(.), '#')]",
+        "ThreadView.posts" : "//article[contains(@class, 'message--post') and contains(concat(' ', normalize-space(@class), ' '), ' message--post ')]",
+        "ThreadView.postTime" : ".//ul[contains(@class, 'message-attribution-main') and contains(concat(' ', normalize-space(@class), ' '), ' message-attribution-main ')]//time[@data-timestamp]",
+        "ThreadView.reactionsBar" : ".//footer//div[contains(@class, 'reactionsBar') and contains(concat(' ', normalize-space(@class), ' '), ' reactionsBar ')]",
+        "ThreadView.reactionsBarInFragment" : ".//*[contains(@class, 'reactionsBar') and contains(concat(' ', normalize-space(@class), ' '), ' reactionsBar ')]",
+        "ThreadView.reactionsLink" : ".//a[contains(@class, 'reactionsBar-link') and contains(concat(' ', normalize-space(@class), ' '), ' reactionsBar-link ')]",
+        "ThreadView.reactionTitles" : ".//*[contains(@class, 'reactionSummary') and contains(concat(' ', normalize-space(@class), ' '), ' reactionSummary ')]//img[@title]",
+        "ThreadView.timestamp" : ".//time[@data-timestamp]",
+        "ThreadView.titlePrefix" : ".//span[contains(@class, 'label') and contains(concat(' ', normalize-space(@class), ' '), ' label ')]",
+        "ThreadView.watchLink" : "//a[@data-sk-watch and @data-sk-unwatch]"
+      },
+      "session" : {
+        "commonFields" : [
+          {
+            "from" : "csrf",
+            "name" : "_xfToken"
+          },
+          {
+            "from" : "requestURI",
+            "name" : "_xfRequestUri"
+          },
+          {
+            "name" : "_xfWithData",
+            "value" : "1"
+          },
+          {
+            "name" : "_xfResponseType",
+            "value" : "json"
+          }
+        ],
+        "csrfAttribute" : "data-csrf",
+        "keptCookies" : [
+          "xf_user",
+          "xf_tfa_trust"
+        ],
+        "loggedInAttribute" : "data-logged-in",
+        "loginPath" : "/login/",
+        "logoutPath" : "/logout/",
+        "registerPath" : "/register/",
+        "securityMarkers" : [
+          "security",
+          "bảo mật"
+        ]
+      }
+    },
+    {
+      "actions" : {
+
+      },
+      "embeddedJSON" : {
+        "thread" : {
+          "fields" : {
+            "attachmentHeight" : "attachment_height",
+            "attachments" : "attachments",
+            "attachmentURL" : "links.permalink",
+            "attachmentWidth" : "attachment_width",
+            "author" : "poster_username",
+            "authorID" : "poster_user_id",
+            "bodyHTML" : "post_body_html",
+            "date" : "post_create_date",
+            "deleted" : "post_is_deleted",
+            "id" : "post_id",
+            "likes" : "post_reaction_total"
+          },
+          "items" : "props.pageProps.apiData.jobs.*[_req.uri=posts].posts",
+          "meta" : {
+            "page" : "props.pageProps.apiData.jobs.*[_req.uri=posts].links.page",
+            "pages" : "props.pageProps.apiData.jobs.*[_req.uri=posts].links.pages",
+            "threadID" : "props.pageProps.apiData.jobs.*[_req.uri=posts].thread.thread_id",
+            "title" : "props.pageProps.apiData.jobs.*[_req.uri=posts].thread.thread_title"
+          },
+          "scriptID" : "__NEXT_DATA__"
+        }
+      },
+      "hosts" : [
+        "tinhte.vn",
+        "www.tinhte.vn"
+      ],
+      "id" : "tinhte",
+      "markup" : {
+        "imageHosts" : [
+          "photo2.tinhte.vn",
+          "imgproxy7.tinhte.vn"
+        ],
+        "quoteSaidSuffix" : " đã nói:"
+      },
+      "name" : "Tinh tế",
+      "platform" : "xenforo1",
+      "reactions" : {
+        "countPattern" : "{n} lượt thích",
+        "kinds" : [
+          {
+            "id" : 1,
+            "title" : "Thích"
+          }
+        ]
+      },
+      "routes" : {
+        "builders" : {
+          "forum" : "/forums/{slug.}{id}/",
+          "forumPage" : "/forums/{slug.}{id}/page-{page}",
+          "goto" : "/posts/{post}/",
+          "index" : "/forums/",
+          "post" : "/posts/{post}/",
+          "thread" : "/thread/{slug.}{id}/",
+          "threadPage" : "/thread/{slug.}{id}/page-{page}"
+        },
+        "patterns" : {
+          "forum" : [
+            "/forums/{slugid}/{tail*}"
+          ],
+          "thread" : [
+            "/thread/{slugid}/{tail*}",
+            "/threads/{slugid}/{tail*}"
+          ]
+        },
+        "threadTail" : {
+          "page" : "page-{page:int}"
+        }
+      },
+      "selectors" : {
+        "BBCode.code" : "bbCodeBlock--code",
+        "BBCode.codePre" : ".//pre",
+        "BBCode.genericBlock" : "bbCodeBlock",
+        "BBCode.image" : "bbImage",
+        "BBCode.imageWrapper" : "bbImageWrapper",
+        "BBCode.media" : "bbMediaWrapper",
+        "BBCode.quote" : "bbCodeBlock--quote",
+        "BBCode.quoteContent" : "./div[contains(@class, 'bbCodeBlock-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-content ')]/div[contains(@class, 'bbCodeBlock-expandContent') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-expandContent ')]",
+        "BBCode.quoteContentFallback" : "./div[contains(@class, 'bbCodeBlock-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-content ')]",
+        "BBCode.quoteSaidSuffix" : " đã nói:",
+        "BBCode.quoteTitleLink" : "./div[contains(@class, 'bbCodeBlock-title') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-title ')]//a",
+        "BBCode.smilie" : "smilie",
+        "BBCode.spoiler" : "bbCodeSpoiler",
+        "BBCode.spoilerContent" : "./div[contains(@class, 'bbCodeSpoiler-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeSpoiler-content ')]/div/div[contains(@class, 'bbCodeBlock-content') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeBlock-content ')]",
+        "BBCode.spoilerTitle" : "./button//span[contains(@class, 'bbCodeSpoiler-button-title') and contains(concat(' ', normalize-space(@class), ' '), ' bbCodeSpoiler-button-title ')]",
+        "BBCode.unfurl" : "bbCodeBlock--unfurl",
+        "Xf1Body.attributionToken" : "attribution",
+        "Xf1Body.parentPosterToken" : "bdPostTree_ParentPoster",
+        "Xf1Body.quoteContent" : ".//*[contains(@class, 'quote') and contains(concat(' ', normalize-space(@class), ' '), ' quote ')]",
+        "Xf1Body.quoteLink" : ".//a[contains(@class, 'AttributionLink') and contains(concat(' ', normalize-space(@class), ' '), ' AttributionLink ')]",
+        "Xf1Body.quoteToken" : "bbCodeQuote",
+        "Xf1Box.heading" : "//h1",
+        "Xf1Box.lastDate" : ".//*[contains(@class, 'lastPostInfo') and contains(concat(' ', normalize-space(@class), ' '), ' lastPostInfo ')]//abbr[contains(@class, 'DateTime') and contains(concat(' ', normalize-space(@class), ' '), ' DateTime ')]",
+        "Xf1Box.lastUser" : ".//*[contains(@class, 'lastPostInfo') and contains(concat(' ', normalize-space(@class), ' '), ' lastPostInfo ')]//a[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ')]",
+        "Xf1Box.pageLinks" : "//a[contains(@href, '/page-')]",
+        "Xf1Box.replies" : ".//dl[contains(@class, 'major') and contains(concat(' ', normalize-space(@class), ' '), ' major ')]/dd",
+        "Xf1Box.startDate" : ".//*[contains(@class, 'posterDate') and contains(concat(' ', normalize-space(@class), ' '), ' posterDate ')]//abbr[contains(@class, 'DateTime') and contains(concat(' ', normalize-space(@class), ' '), ' DateTime ')]",
+        "Xf1Box.starter" : ".//*[contains(@class, 'posterDate') and contains(concat(' ', normalize-space(@class), ' '), ' posterDate ')]//a[contains(@class, 'username') and contains(concat(' ', normalize-space(@class), ' '), ' username ')]",
+        "Xf1Box.stickyToken" : "sticky",
+        "Xf1Box.threads" : "//li[contains(@class, 'discussionListItem') and contains(concat(' ', normalize-space(@class), ' '), ' discussionListItem ')]",
+        "Xf1Box.title" : ".//a[contains(@class, 'PreviewTooltip') and contains(concat(' ', normalize-space(@class), ' '), ' PreviewTooltip ')]",
+        "Xf1Box.views" : ".//dl[contains(@class, 'minor') and contains(concat(' ', normalize-space(@class), ' '), ' minor ')]/dd",
+        "Xf1Index.categoryToken" : "category",
+        "Xf1Index.forumToken" : "forum",
+        "Xf1Index.latestDate" : ".//abbr[contains(@class, 'DateTime') and contains(concat(' ', normalize-space(@class), ' '), ' DateTime ')]",
+        "Xf1Index.latestTitle" : ".//*[contains(@class, 'lastThreadTitle') and contains(concat(' ', normalize-space(@class), ' '), ' lastThreadTitle ')]/a",
+        "Xf1Index.latestUser" : ".//*[contains(@class, 'lastThreadUser') and contains(concat(' ', normalize-space(@class), ' '), ' lastThreadUser ')]/a",
+        "Xf1Index.nodes" : "//li[contains(@class, 'node') and contains(concat(' ', normalize-space(@class), ' '), ' node ')]",
+        "Xf1Index.stats" : ".//*[contains(@class, 'nodeStats') and contains(concat(' ', normalize-space(@class), ' '), ' nodeStats ')]//dd",
+        "Xf1Index.title" : ".//*[contains(@class, 'nodeTitle') and contains(concat(' ', normalize-space(@class), ' '), ' nodeTitle ')]/a"
+      }
+    }
+  ],
+  "notice" : "© Vu Huynh. Phần tuyển chọn, sắp xếp và quy tắc trích xuất cho ứng dụng Hóng. Không cấp phép sao chép hay tái sử dụng. Tên, nhãn hiệu và thông tin giấy phép của các cơ quan báo chí thuộc về chủ sở hữu và chỉ được liệt kê để tham khảo. Không ngụ ý hợp tác hay bảo trợ. Yêu cầu gỡ bỏ: cyonlong@gmail.com, xử lý trong 24 giờ.\n© Vu Huynh. Selection, arrangement and extraction rules for the Hóng app. Not licensed for copying or reuse. Publisher names, marks and licence details belong to their owners and are listed for reference only. No partnership or endorsement is implied. Removal requests: cyonlong@gmail.com, handled within 24 hours."
+}

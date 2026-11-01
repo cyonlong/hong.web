@@ -1,0 +1,9 @@
+hong-envelope-v2
+eyJrZXlJRCI6InByaW1hcnkiLCJraW5kIjoic3RhdHVzIiwibWluQXBwVmVyc2lvbiI6IjAuMi4wIiwibm90QWZ0ZXIiOiIyMDI2LTEyLTAxVDA2OjA5OjAyWiIsInNvdXJjZUlEIjoiaG9uZyIsInZlcnNpb24iOjE3OTM1MTMzNDJ9
+sFGhmFwpjWtsDhBV4w0y3XisAv1QhglL+dnNvq4WFVkPajT5Rr/HsvfRdveCTReC7rE/isggpZMHw12eVT6jAQ==
+{
+  "enabled" : true,
+  "message" : null,
+  "minIntervalMs" : null,
+  "notice" : "© Vu Huynh. Phần tuyển chọn, sắp xếp và quy tắc trích xuất cho ứng dụng Hóng. Không cấp phép sao chép hay tái sử dụng. Tên, nhãn hiệu và thông tin giấy phép của các cơ quan báo chí thuộc về chủ sở hữu và chỉ được liệt kê để tham khảo. Không ngụ ý hợp tác hay bảo trợ. Yêu cầu gỡ bỏ: cyonlong@gmail.com, xử lý trong 24 giờ.\n© Vu Huynh. Selection, arrangement and extraction rules for the Hóng app. Not licensed for copying or reuse. Publisher names, marks and licence details belong to their owners and are listed for reference only. No partnership or endorsement is implied. Removal requests: cyonlong@gmail.com, handled within 24 hours."
+}

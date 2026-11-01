@@ -1,0 +1,19 @@
+Hóng: thông báo quyền / rights notice
+
+© Vu Huynh. Phần tuyển chọn, sắp xếp và quy tắc trích xuất cho ứng dụng Hóng trong các tệp v2/
+(status.txt, forum.txt, hints.txt, catalog.txt, packs.txt, forums.txt). Không cấp phép sao chép hay tái sử
+dụng. forums.txt chỉ chứa mô tả kỹ thuật của diễn đàn (đường dẫn, bộ chọn, tham số đăng nhập, cách gắn
+các thao tác có sẵn trong ứng dụng), không chứa nội dung nào của diễn đàn. Tên, nhãn hiệu và thông tin
+giấy phép của các cơ quan báo chí và diễn đàn thuộc về chủ sở hữu và chỉ được liệt kê để tham khảo.
+Không ngụ ý hợp tác hay bảo trợ. Các tệp không chứa chữ hay ảnh nào của bài báo hay bài viết.
+Yêu cầu gỡ hoặc giới hạn mẫu đọc (báo hay diễn đàn): cyonlong@gmail.com, xử lý trong 24 giờ.
+
+© Vu Huynh. Selection, arrangement and extraction rules for the Hóng app in the v2/ files
+(status.txt, forum.txt, hints.txt, catalog.txt, packs.txt, forums.txt). Not licensed for copying or reuse.
+forums.txt holds only technical descriptions of forums (routes, selectors, sign-in parameters, and the
+bindings of actions built into the app), never forum content. Names, marks and licence details of
+publishers and forums belong to their owners and are listed for reference only. No partnership or
+endorsement is implied. The files contain no article or post text or images.
+Requests to remove or limit a template (paper or forum): cyonlong@gmail.com, handled within 24 hours.
+
+The files are signed (Ed25519) plain text; the app ignores any file whose signature does not verify.

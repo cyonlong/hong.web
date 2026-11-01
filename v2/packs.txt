@@ -1,0 +1,378 @@
+hong-envelope-v2
+eyJrZXlJRCI6InByaW1hcnkiLCJraW5kIjoicGFja3MiLCJtaW5BcHBWZXJzaW9uIjoiMC4yLjAiLCJub3RBZnRlciI6IjIwMjYtMTItMTZUMDY6MzU6MzdaIiwic291cmNlSUQiOiJob25nIiwidmVyc2lvbiI6MTc5MzUxNDkzN30=
+VcZR/PraB+gBylh6EFqbIgBnD5peJ9bN8CjELqLWIDiK4uLVMGsReymkvKFXexF5FqnBhVpzc6i6uN0wNso1BA==
+{
+  "digests" : [
+    {
+      "id" : "kinh-te",
+      "title" : "Kinh tế",
+      "topics" : [
+        "Kinh doanh",
+        "Tài chính",
+        "Bất động sản",
+        "Việc làm"
+      ]
+    },
+    {
+      "id" : "cong-nghe",
+      "title" : "Công nghệ và khoa học",
+      "topics" : [
+        "Công nghệ",
+        "Khoa học",
+        "Game"
+      ]
+    },
+    {
+      "id" : "the-thao-giai-tri",
+      "title" : "Thể thao và giải trí",
+      "topics" : [
+        "Thể thao",
+        "Giải trí"
+      ]
+    },
+    {
+      "id" : "song",
+      "title" : "Sống và đi lại",
+      "topics" : [
+        "Đời sống",
+        "Du lịch",
+        "Ẩm thực",
+        "Xe",
+        "Giao thông",
+        "Thời tiết"
+      ]
+    }
+  ],
+  "filters" : [
+    {
+      "id" : "giat-gan",
+      "phrases" : [
+        "gây sốc",
+        "cực sốc",
+        "sốc nặng",
+        "choáng váng",
+        "không thể tin nổi",
+        "sự thật đằng sau",
+        "gây bão mạng",
+        "xôn xao mạng",
+        "dân mạng phát sốt",
+        "khiến ai cũng",
+        "bất ngờ với",
+        "lộ diện",
+        "rúng động",
+        "hé lộ bí mật",
+        "ít ai biết"
+      ],
+      "title" : "Tiêu đề giật gân"
+    },
+    {
+      "id" : "quang-cao",
+      "phrases" : [
+        "khuyến mãi",
+        "ưu đãi lớn",
+        "giảm giá sốc",
+        "mã giảm giá",
+        "flash sale",
+        "săn sale",
+        "tặng kèm",
+        "mua ngay",
+        "nội dung tài trợ",
+        "chương trình ưu đãi"
+      ],
+      "title" : "Bài quảng cáo, khuyến mãi"
+    },
+    {
+      "id" : "tu-vi",
+      "phrases" : [
+        "tử vi",
+        "con giáp",
+        "phong thủy",
+        "xem bói",
+        "vận may",
+        "cung hoàng đạo",
+        "giờ hoàng đạo",
+        "thần tài gõ cửa",
+        "tuổi nào"
+      ],
+      "title" : "Tử vi, bói toán"
+    },
+    {
+      "id" : "doi-tu-sao",
+      "phrases" : [
+        "hot girl",
+        "hot boy",
+        "showbiz",
+        "lộ ảnh",
+        "hẹn hò",
+        "tình mới",
+        "ly hôn",
+        "nhan sắc"
+      ],
+      "title" : "Đời tư người nổi tiếng"
+    },
+    {
+      "id" : "tai-nan",
+      "phrases" : [
+        "thương tâm",
+        "tử vong",
+        "thi thể",
+        "tai nạn thảm khốc",
+        "án mạng",
+        "sát hại",
+        "đâm chết",
+        "tự tử"
+      ],
+      "title" : "Tai nạn, vụ án thương tâm"
+    }
+  ],
+  "month" : "2026-11",
+  "notice" : "© Vu Huynh. Phần tuyển chọn, sắp xếp và quy tắc trích xuất cho ứng dụng Hóng. Không cấp phép sao chép hay tái sử dụng. Tên, nhãn hiệu và thông tin giấy phép của các cơ quan báo chí thuộc về chủ sở hữu và chỉ được liệt kê để tham khảo. Không ngụ ý hợp tác hay bảo trợ. Yêu cầu gỡ bỏ: cyonlong@gmail.com, xử lý trong 24 giờ.\n© Vu Huynh. Selection, arrangement and extraction rules for the Hóng app. Not licensed for copying or reuse. Publisher names, marks and licence details belong to their owners and are listed for reference only. No partnership or endorsement is implied. Removal requests: cyonlong@gmail.com, handled within 24 hours.",
+  "topics" : [
+    {
+      "keywords" : [
+        "doanh nghiệp",
+        "doanh thu",
+        "lợi nhuận",
+        "xuất khẩu",
+        "nhập khẩu",
+        "thương mại",
+        "bán lẻ",
+        "khởi nghiệp",
+        "thị trường",
+        "giá vàng",
+        "giá xăng"
+      ],
+      "topic" : "Kinh doanh"
+    },
+    {
+      "keywords" : [
+        "chứng khoán",
+        "cổ phiếu",
+        "ngân hàng",
+        "lãi suất",
+        "tỷ giá",
+        "trái phiếu",
+        "VN-Index",
+        "tín dụng",
+        "ngoại tệ",
+        "tiền số"
+      ],
+      "topic" : "Tài chính"
+    },
+    {
+      "keywords" : [
+        "bất động sản",
+        "nhà đất",
+        "căn hộ",
+        "chung cư",
+        "dự án nhà ở",
+        "giá nhà",
+        "đất nền",
+        "sổ đỏ"
+      ],
+      "topic" : "Bất động sản"
+    },
+    {
+      "keywords" : [
+        "công nghệ",
+        "điện thoại",
+        "iPhone",
+        "Android",
+        "smartphone",
+        "trí tuệ nhân tạo",
+        "chip",
+        "phần mềm",
+        "laptop",
+        "ứng dụng"
+      ],
+      "topic" : "Công nghệ"
+    },
+    {
+      "keywords" : [
+        "khoa học",
+        "nhà khoa học",
+        "nghiên cứu",
+        "vũ trụ",
+        "NASA",
+        "hóa thạch",
+        "khủng long",
+        "phát hiện mới"
+      ],
+      "topic" : "Khoa học"
+    },
+    {
+      "keywords" : [
+        "học sinh",
+        "sinh viên",
+        "giáo viên",
+        "thi tốt nghiệp",
+        "tuyển sinh",
+        "đại học",
+        "học phí",
+        "điểm chuẩn",
+        "trường học"
+      ],
+      "topic" : "Giáo dục"
+    },
+    {
+      "keywords" : [
+        "bóng đá",
+        "tuyển Việt Nam",
+        "V-League",
+        "Ngoại hạng Anh",
+        "Champions League",
+        "World Cup",
+        "SEA Games",
+        "HLV",
+        "cầu thủ",
+        "quần vợt"
+      ],
+      "topic" : "Thể thao"
+    },
+    {
+      "keywords" : [
+        "ca sĩ",
+        "diễn viên",
+        "phim",
+        "MV",
+        "showbiz",
+        "hoa hậu",
+        "nghệ sĩ",
+        "âm nhạc",
+        "liveshow"
+      ],
+      "topic" : "Giải trí"
+    },
+    {
+      "keywords" : [
+        "du lịch",
+        "du khách",
+        "khách sạn",
+        "điểm đến",
+        "tour",
+        "check-in",
+        "visa"
+      ],
+      "topic" : "Du lịch"
+    },
+    {
+      "keywords" : [
+        "món ăn",
+        "ẩm thực",
+        "nhà hàng",
+        "đặc sản",
+        "công thức",
+        "quán ăn",
+        "đồ uống"
+      ],
+      "topic" : "Ẩm thực"
+    },
+    {
+      "keywords" : [
+        "ô tô",
+        "xe máy",
+        "xe điện",
+        "VinFast",
+        "Toyota",
+        "Honda",
+        "giá xe",
+        "SUV",
+        "sedan",
+        "đăng kiểm"
+      ],
+      "topic" : "Xe"
+    },
+    {
+      "keywords" : [
+        "thời tiết",
+        "mưa lớn",
+        "cơn bão",
+        "siêu bão",
+        "áp thấp nhiệt đới",
+        "nắng nóng",
+        "rét đậm",
+        "không khí lạnh",
+        "lũ lụt"
+      ],
+      "topic" : "Thời tiết"
+    },
+    {
+      "keywords" : [
+        "giao thông",
+        "cao tốc",
+        "ùn tắc",
+        "metro",
+        "đường sắt",
+        "sân bay",
+        "CSGT",
+        "phạt nguội"
+      ],
+      "topic" : "Giao thông"
+    },
+    {
+      "keywords" : [
+        "gia đình",
+        "hôn nhân",
+        "con cái",
+        "cuộc sống",
+        "nhà ở",
+        "chi tiêu",
+        "mẹo vặt"
+      ],
+      "topic" : "Đời sống"
+    },
+    {
+      "keywords" : [
+        "nước Mỹ",
+        "Tổng thống Mỹ",
+        "Trung Quốc",
+        "Moscow",
+        "Ukraine",
+        "châu Âu",
+        "Nhật Bản",
+        "Hàn Quốc",
+        "Liên Hợp Quốc",
+        "quốc tế"
+      ],
+      "topic" : "Thế giới"
+    },
+    {
+      "keywords" : [
+        "môi trường",
+        "ô nhiễm",
+        "rác thải",
+        "biến đổi khí hậu",
+        "khí thải",
+        "phá rừng",
+        "cháy rừng",
+        "động vật hoang dã"
+      ],
+      "topic" : "Môi trường"
+    },
+    {
+      "keywords" : [
+        "việc làm",
+        "tuyển dụng",
+        "người lao động",
+        "tăng lương",
+        "tiền lương",
+        "thất nghiệp",
+        "nghỉ việc",
+        "bảo hiểm xã hội"
+      ],
+      "topic" : "Việc làm"
+    },
+    {
+      "keywords" : [
+        "game",
+        "esports",
+        "game thủ",
+        "PlayStation",
+        "Xbox",
+        "Nintendo",
+        "Steam"
+      ],
+      "topic" : "Game"
+    }
+  ]
+}
